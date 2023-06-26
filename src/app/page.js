@@ -49,24 +49,24 @@ export default function Home() {
  };
 
   return (
-    <div className=''>
+    <div className='dark:bg-opacity-25 dark:text-opacity-25 '> 
       <section  className= '' > {/*Section from main heading to image container */}
-        <div className=' bg-yellow-200 dark:bg-gray-950' >
+        <div className=' bg-yellow-200 dark:bg-gray-950 ' >
          <nav className='py-10 p-10 mb-10 flex justify-between '>
-          <Link href={'#'} ><h1 className='text-xl font-burtons'>Wiwek</h1></Link>
+          <Link href='.' ><h1 className='text-xl font-burtons tracking-wide hover:text-teal-600  transition ease-in-out delay-130  duration-300 hover:scale-110 '>Wiwek</h1></Link>
           <ul className='flex item-center'>
             <li className=' transition ease-in-out delay-150 hover:scale-110 duration-300' >
             {renderThemeChanger()}
             </li>
             <li className='transition ease-in-out delay-150 hover:scale-110 duration-300' >
-              <Link className= 'bg-gradient-to-r from-cyan-500 to-teal-500 font-semibold tracking-wider text-black dark:text-white px-4 py-2 rounded-lg ml-8' href='Resume_Bibek.pdf' target='_blank' >Resume</Link>
+              <Link className= 'bg-gradient-to-r from-cyan-500 to-teal-500 font-semibold tracking-wider text-black dark:text-white px-4 py-2 rounded-lg ml-8' href='Bibek-kc.pdf' target='_blank' >Resume</Link>
             </li>
           </ul>
          </nav>
          <div className='text-center p-10 flex flex-col'>
-          <h2 className='md:text-6xl text-5xl py-2 text-teal-600 font-extrabold'>Wiwek_K.C.</h2>
+          <h2 className='md:text-8xl text-7xl py-2 text-teal-600 font-extrabold'>Bibek_K.C.</h2>
           <h3 className='md:text-3xl text-xl py-2 tracking-widest '>Software Developer and Data Analyst</h3>
-          <p className='md:text-md dark:text-gray-100 py-5 leading-8 text-gray-800 font-serif tracking-wide ' >
+          <p className='md:text-md dark:text-gray-100 py-5 leading-8 text-gray-800 font-serif tracking-widest ' >
             This is me a software developer and data insight analyst who is interested in technology and its impacts on business corporates industry and in consumer level.
           </p>
          </div>
@@ -85,12 +85,12 @@ export default function Home() {
          </div>
       </section>
       <section className='dark:bg-gray-950 md:pl-20 md:pr-20 p-10 md:px-18 bg-yellow-100 flex flex-col md:flex-row gap-6 min-h-fit'> {/*Section of about me and skills*/}
-        <div className='w-full md:w-[50%] tracking-wide '>
+        <div className='w-full md:w-[50%] tracking-widest '>
            <h3 className='text-3xl font-extrabold text-teal-700 uppercase'>About Me</h3>
-           <p className='text-md leading-8 text-gray-800 text-justify mt-2 dark:text-white '>
+           <p className='text-md leading-9 text-gray-800 text-justify mt-2 dark:text-white '>
               I am a <span className='text-teal-500'> full stack web developer </span> and <span className='text-teal-500'>Analytics engineer</span> who loves to try new tech stack. Getting hands on experience on projects regarding<span className='text-teal-500'> desktop</span> and <span className='text-teal-500'>web application</span>, I have a passion for working in web technology, solving problems and thrive in a team environment.
            </p>
-           <p className='text-md leading-8 text-gray-800 pt-6 dark:text-white '>
+           <p className='text-md leading-9 text-gray-800 pt-6 dark:text-white '>
               I&apos;m open to <span className='text-teal-500'> Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <span className='text-teal-500'>contact</span> me.
            </p>
         </div>
@@ -183,7 +183,7 @@ export default function Home() {
         <h1 className='text-3xl font-extrabold text-teal-700 text-center' >My Works</h1>
         <div className=' bg-teal-700 h-1 w-8  rounded-full m-auto text-center' ></div>
         <div className='flex justify-center'>
-        <p className='px-4 w-full m-auto  text-center text-lg font-serif'>Here you will find some of the personal projects that I created, with each project containing all of the tech stacks used</p>
+        <p className='px-4 w-full m-auto  text-center text-lg tracking-wide font-serif'>Here you will find some of the personal projects that I created, with each project containing all of the tech stacks used</p>
         </div>
         <section>
           <div>
@@ -199,7 +199,7 @@ export default function Home() {
             </button>
           </div>
           <div className='pt-5 font-serif tracking-widest text-teal-800 font-bold animate-pulse ' >
-            <span>Designed By :  Wiwek K.C.</span>
+            <span>Designed By : Bibek K.C. || Wiwek K.C.</span>
           </div>
         </footer>
        </main>
