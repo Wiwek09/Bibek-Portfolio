@@ -11,9 +11,9 @@ const project = ({}) => {
     <div className=' p-10 flex flex-col space-y-10 justify-center items-center' >
         {projects.map((el,index) => {
          return (
-          <div key={el.id} className={`flex ${index % 2 ? 'xl:flex-row-reverse' :'xl:flex-row' }  xl:gap-[6rem]  flex-col space-y-8  xl:w-[70%]`}  >
+          <div key={el.id} className={`flex ${index % 2 ? 'xl:flex-row-reverse' :'xl:flex-row' }  xl:gap-[6rem]  flex-col space-y-8  xl:w-[70%] pb-10 `}   >
             <div className='md:block shadow-lg shadow-yellow-300  h-fit w-fit rounded-xl' >
-              <div  className='relative overflow-hidden container xl:h-auto xl:w-auto hover:opacity-[0.8] rounded-xl'  >
+              <div  className='relative overflow-hidden container hover:opacity-[0.8] rounded-xl'  >
                 <Image className=' xl:w-auto xl:h-auto h-40 w-25' src={el.image} alt='image' objectFit='cover' height={500} width={500} />
                 <Link href={el.link} target='_blank' >
                  <span className="overlay dark:bg-gray-900 dark:opacity-95 ">
