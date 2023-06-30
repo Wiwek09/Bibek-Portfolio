@@ -49,7 +49,7 @@ export default function Home() {
  };
 
   return (
-    <div className='dark:bg-opacity-25 dark:text-opacity-25 '> 
+    <div className=''> 
       <section  className= '' > {/*Section from main heading to image container */}
         <div className=' bg-yellow-200 dark:bg-gray-950 dark:bg-opacity-50' >
          <nav className='py-10 p-10 mb-10 flex justify-between '>
@@ -181,7 +181,7 @@ export default function Home() {
       <section className='align-middle my-20'> {/* Section for my project */}
        <main className='w-full space-y-4' >
         <h1 className='text-3xl xl:text-4xl font-extrabold text-teal-700 text-center uppercase' >My Works</h1>
-        <div className=' bg-teal-700 h-1 w-8 rounded-full m-auto text-center' ></div>
+        <div className=' bg-teal-700 h-1 w-28 rounded-full m-auto text-center' ></div>
         <div className='flex justify-center'>
         <p className='px-4 w-full m-auto xl:text-xl  text-center text-lg tracking-wide font-serif'>Here you will find some of the personal projects that I created, with each project containing all of the tech stacks used</p>
         </div>
