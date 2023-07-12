@@ -25,7 +25,7 @@
         desc:'E-Commerce App. It contains only design part. Backend and full integration are in github repo',
         tech:['React','JWT','Stripe','Express','MongoDB'],
         link:'https://e-commerce-front-end-agez.vercel.app/',
-        github:'https://github.com/Wiwek09/E-Commerce-Front-End'
+        github:'https://github.com/Wiwek09/E-COMMERCE-FULLSTACK'
     },
     {
         id:3,
