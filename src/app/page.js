@@ -65,7 +65,7 @@ export default function Home() {
          </nav>
          <div className='text-center p-10 flex flex-col'>
           <h2 className='xl:text-9xl text-7xl py-2 text-teal-600 font-extrabold'>Bibek_K.C.</h2>
-          <h3 className='xl:text-4xl text-xl py-2 tracking-widest '>Software Developer and Data Analyst</h3>
+          <h3 className='xl:text-4xl text-xl py-2 tracking-widest '>Software Developer</h3>
           <p className='xl:text-xl dark:text-gray-100 py-5 leading-8 text-gray-800 font-serif tracking-wide ' >
             This is me a software developer and data insight analyst who is interested in technology and its impacts on business corporates industry and in consumer level.
           </p>

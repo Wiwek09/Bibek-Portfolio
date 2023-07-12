@@ -6,7 +6,7 @@
 
 @layer components{
   .list{
-    @apply bg-purple-200 rounded-full p-2 text-center w-40 h-10 text-base xl:text-lg text-black dark:text-white dark:bg-gray-700 ;
+    @apply bg-purple-200 rounded-full p-2 text-center w-40 h-10 text-base xl:text-lg text-black dark:text-white dark:bg-slate-700 ;
   }
 
   .icons{
@@ -17,7 +17,7 @@
 
 @layer base{
   body {
-    @apply bg-slate-200 duration-300 text-gray-900 dark:bg-black dark:bg-opacity-25 dark:text-gray-100 bg-opacity-75 ;
+    @apply bg-slate-200 duration-300 text-gray-900 dark:bg-slate-700 dark:bg-opacity-25 dark:text-gray-100 bg-opacity-75 ;
     @apply min-h-screen;
   }
 }
