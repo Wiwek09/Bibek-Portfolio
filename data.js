@@ -56,4 +56,10 @@
     }
 ]
 
+export const skills = [
+    'HTML','CSS','Tailwind','Javascript','Typescript','Python','React','Next','Node','Express','MongoDB','RestAPI','MySQL'
+ ]
+
+
 export default projects
+

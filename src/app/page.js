@@ -6,7 +6,8 @@ import Link from 'next/link';
 import {useTheme} from "next-themes";
 import {useState, useEffect} from "react";
 import Project from '../component/project';
-import {BiUpArrow} from 'react-icons/bi'
+import {BiUpArrow} from 'react-icons/bi';
+import { skills } from 'data';
 
 
 export default function Home() {
@@ -54,11 +55,11 @@ export default function Home() {
         <div className=' bg-yellow-200 dark:bg-gray-950 dark:bg-opacity-50' >
          <nav className='py-10 p-10 mb-10 flex justify-between '>
           <Link href='.' ><h1 className='text-xl font-burtons tracking-wide hover:text-teal-600  transition ease-in-out delay-130  duration-300 hover:scale-110 '>Wiwek</h1></Link>
-          <ul className='flex item-center'>
-            <li className=' transition ease-in-out delay-150 hover:scale-110 duration-300' >
+          <ul className='flex justify-center items-center'>
+            <li className='transition ease-in-out  hover:scale-105 duration-700' >
             {renderThemeChanger()}
             </li>
-            <li className='transition ease-in-out delay-150 hover:scale-110 duration-300' >
+            <li className='transition ease-in-out  hover:scale-105 duration-700' >
               <Link className= 'bg-gradient-to-r from-cyan-500 to-teal-500 font-semibold tracking-widest text-black dark:text-white px-4 py-2 rounded-lg ml-8' href='Bibek-kc.pdf' target='_blank' >Resume</Link>
             </li>
           </ul>
@@ -67,7 +68,7 @@ export default function Home() {
           <h2 className='xl:text-9xl text-7xl py-2 text-teal-600 font-extrabold'>Bibek_K.C.</h2>
           <h3 className='xl:text-4xl text-xl py-2 tracking-widest '>Software Developer</h3>
           <p className='xl:text-xl dark:text-gray-100 py-5 leading-8 text-gray-800 font-serif tracking-wide ' >
-            This is me a software developer and data insight analyst who is interested in technology and its impacts on business corporates industry and in consumer level.
+            This is me a software developer who is interested in technology and its impacts on business corporates industry and in consumer level.
           </p>
          </div>
         </div>
@@ -88,7 +89,7 @@ export default function Home() {
         <div className='w-full md:w-[50%] tracking-widest '>
            <h3 className='text-3xl font-extrabold text-teal-700 uppercase'>About Me</h3>
            <p className='text-md leading-9 xl:text-xl text-gray-800 text-justify mt-2 dark:text-white '>
-              I am a <span className='text-teal-500'> full stack web developer </span> and <span className='text-teal-500'>Analytics engineer</span> who loves to try new tech stack. Getting hands on experience on projects regarding<span className='text-teal-500'> desktop</span> and <span className='text-teal-500'>web application</span>, I have a passion for working in web technology, solving problems and thrive in a team environment.
+              I am a <span className='text-teal-500'> full stack web developer </span> who loves to try new tech stack. Getting hands on experience on projects regarding<span className='text-teal-500'> desktop</span> and <span className='text-teal-500'>web application</span>, I have a passion for working in web technology, solving problems and thrive in a team environment.
            </p>
            <p className='text-md leading-9 xl:text-xl text-gray-800 pt-6 dark:text-white '>
               I&apos;m open to <span className='text-teal-500'> Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <span className='text-teal-500'>contact</span> me.
@@ -96,86 +97,13 @@ export default function Home() {
         </div>
         <div className='w-full md:ml-12 md:w-[50%] tracking-wide'>
           <h3 className='md:text-3xl text-2xl font-extrabold text-teal-700 uppercase'>Technology I have worked with</h3>
-          <div  >
-          <section className=' md:text-2xl text-l text-green-600 mt-2 font-serif font-extrabold ' >1. WEB APPLICATION
-          <ul className='grid xl:grid-cols-4 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal grid-flow-row-dense '>
-            <li className=' list '>
-              HTML
-            </li>
-            <li className= 'list '>
-              CSS
-            </li>
-            <li className=' list '>
-              Javascript
-            </li>
-            <li className=' list '>
-              React
-            </li>
-            <li className=' list '>
-              Next
-            </li>
-            <li className=' list '>
-              Node
-            </li>
-            <li className=' list '>
-              Express
-            </li>
-            <li className=' list '>
-              Tailwind
-            </li>
-            <li className=' list '>
-              Typescript
-            </li>
-            <li className=' list '>
-              MongoDB
-            </li>
-            <li className=' list '>
-              RestAPI
-            </li>
-            <li className=' list '>
-              PostgresSQL
-            </li>
+          <div className='mt-4'  >
+          <ul className='grid md:grid-cols-2 xl:grid-cols-4 xl:gap-y-4 md:gap-x-12 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal grid-flow-row-dense '>
+           {skills.map((item) => 
+           <li className='list'>{item}</li>)
+           }
           </ul>
-          </section>
-          <section className=' md:text-2xl text-l text-green-600 mt-4 font-serif text-clip font-extrabold ' >2. DESKTOP APPLICATION
-          <ul className='grid xl:grid-cols-4 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal'>
-            <li className=' list'>
-              Python
-            </li>
-            <li className= 'list '>
-              Tkinter
-            </li>
-            <li className=' list '>
-              SQlite
-            </li>
-            <li className=' list '>
-              MySQL
-            </li>
-            </ul>
-          </section>
-          <section className=' md:text-2xl text-l text-green-600 mt-4 font-serif font-extrabold ' >3. DATA ANALYTICS AND VISUALIZATION
-          <ul className='grid xl:grid-cols-4 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal'>
-          <li className=' list'>
-              Python
-            </li>
-            <li className= 'list '>
-              NumPy
-            </li>
-            <li className=' list '>
-              Pandas
-            </li>
-            <li className=' list '>
-              MatPlotLib
-            </li>
-            <li className=' list '>
-              Seaborn
-            </li>
-            <li className=' list '>
-              MsExcel
-            </li>
-          </ul>
-          </section>
-           </div>
+          </div>
         </div>
       </section>    
       <section className='align-middle my-20'> {/* Section for my project */}
@@ -205,6 +133,5 @@ export default function Home() {
        </main>
       </section>  
     </div>
-
   )
 }
