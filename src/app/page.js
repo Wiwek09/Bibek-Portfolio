@@ -100,7 +100,7 @@ export default function Home() {
           <div className='mt-4'  >
           <ul className='grid md:grid-cols-2 xl:grid-cols-4 xl:gap-y-4 md:gap-x-12 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal grid-flow-row-dense '>
            {skills.map((item) => 
-           <li className='list'>{item}</li>)
+           <li className='list' key={item} >{item}</li>)
            }
           </ul>
           </div>
