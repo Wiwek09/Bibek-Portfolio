@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from 'react'
 import projects from 'data'
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import Link from 'next/link'
 import {HiBadgeCheck} from 'react-icons/hi'
 
@@ -14,7 +13,7 @@ const project = ({}) => {
           <div key={el.id} className={`flex ${index % 2 ? 'xl:flex-row-reverse' :'xl:flex-row' }  xl:gap-[6rem]  flex-col space-y-8  xl:w-[70%] pb-10 `}   >
             <div className='md:block shadow-lg shadow-yellow-300  h-fit w-fit rounded-xl' >
               <div  className='relative overflow-hidden container hover:opacity-[0.8] rounded-xl'  >
-                <Image className=' xl:w-auto xl:h-auto h-40 w-25' src={el.image} alt='image' objectFit='cover' height={500} width={500} />
+                <Image className=' xl:w-auto xl:h-auto h-40 w-10 xl:w-25' src={el.image} alt='image' height={250} width={500} />
                 <Link href={el.link} target='_blank' >
                  <span className="overlay dark:bg-gray-900 dark:opacity-95 ">
                    <span className="text hover:opacity-1 text-2xl md:text-3xl">

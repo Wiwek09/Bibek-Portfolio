@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <div className=''> 
       <section  className= '' > {/*Section from main heading to image container */}
-        <div className=' bg-yellow-200 dark:bg-gray-950 dark:bg-opacity-50' >
+        <div className=' bg-yellow-200 dark:bg-gray-950 dark:bg-opacity-50  rounded-b-3xl' >
          <nav className='py-10 p-10 mb-10 flex justify-between '>
           <Link href='.' ><h1 className='text-xl font-burtons tracking-wide hover:text-teal-600  transition ease-in-out delay-130  duration-300 hover:scale-110 '>Wiwek</h1></Link>
           <ul className='flex justify-center items-center'>
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
          </div>
       </section>
-      <section className='dark:bg-gray-950 dark:bg-opacity-50 md:pl-20 md:pr-20 p-10 md:px-18 bg-yellow-200 flex flex-col md:flex-row gap-6 min-h-fit'> {/*Section of about me and skills*/}
+      <section className='dark:bg-gray-950 dark:bg-opacity-50 md:pl-10 md:pr-10 xl:px-20 p-10 md:px-18 bg-yellow-200 flex flex-col md:flex-row gap-6 min-h-fit rounded-3xl '> {/*Section of about me and skills*/}
         <div className='w-full md:w-[50%] tracking-widest '>
            <h3 className='text-3xl font-extrabold text-teal-700 uppercase'>About Me</h3>
            <p className='text-md leading-9 xl:text-xl text-gray-800 text-justify mt-2 dark:text-white '>
@@ -106,7 +106,7 @@ export default function Home() {
           </div>
         </div>
       </section>    
-      <section className='align-middle my-20'> {/* Section for my project */}
+      <section className='align-middle my-20 '> {/* Section for my project */}
        <main className='w-full space-y-4' >
         <h1 className='text-3xl xl:text-4xl font-extrabold text-teal-700 text-center uppercase' >My Works</h1>
         <div className=' bg-teal-700 h-1 w-28 rounded-full m-auto text-center' ></div>

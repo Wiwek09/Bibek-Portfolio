@@ -18,6 +18,10 @@ module.exports = {
    
   },
   plugins: [
-    require('tailwind-scrollbar')({ nocompatible: true })
+    require('tailwind-scrollbar')({ nocompatible: true }),
+    require('postcss-import'),
+    require('postcss-nesting'),
+    require('autoprefixer'),
+    require('tailwindcss'),
   ],
 }
