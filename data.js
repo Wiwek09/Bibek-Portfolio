@@ -57,7 +57,7 @@
     {
         id:6,
         title:'Online Clothing Store',
-        image:'/online.png',
+        image:'/image.png',
         desc:'Online shopping store where users can watch,search and see details of the products.',
         tech:['Next','FakestoreApi','TanStack Query'],
         link:'https://online-commerce.vercel.app/',
