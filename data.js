@@ -53,6 +53,15 @@
         tech:['Python','NumPy','Pandas','MatPlotLib','Seaborn','Jupyter notebook'],
         link:'https://github.com/Wiwek09/EPL-Data-Analytics/blob/master/Data-Visualization.ipynb',
         github:'https://github.com/Wiwek09/EPL-Data-Analytics'
+    },
+    {
+        id:6,
+        title:'Online Clothing Store',
+        image:'/online.png',
+        desc:'Online shopping store where users can watch,search and see details of the products.',
+        tech:['Next','FakestoreApi','TanStack Query'],
+        link:'https://online-commerce.vercel.app/',
+        github:'https://github.com/Wiwek09/Online-Commerce'
     }
 ]
 
