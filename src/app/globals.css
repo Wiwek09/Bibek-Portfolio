@@ -6,7 +6,7 @@
 
 @layer components{
   .list{
-    @apply bg-yellow-300 rounded-full p-2 text-center w-[10rem] h-10 text-base xl:text-lg text-black dark:text-white dark:bg-slate-700 ;
+    @apply bg-yellow-300 rounded-full p-2 text-center text-base xl:text-lg text-black dark:text-white dark:bg-slate-700 ;
   }
 
   .icons{

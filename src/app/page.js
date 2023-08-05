@@ -64,21 +64,21 @@ export default function Home() {
             </li>
           </ul>
          </nav>
-         <div className='text-center p-10 flex flex-col'>
+         <div className='text-center md:p-10 flex flex-col'>
           <h2 className='xl:text-9xl text-7xl py-2 text-teal-600 font-extrabold'>Bibek_K.C.</h2>
-          <h3 className='xl:text-4xl text-xl py-2 tracking-widest '>Software Developer</h3>
-          <p className='xl:text-xl dark:text-gray-100 py-5 leading-8 text-gray-800 font-serif tracking-wide ' >
+          <h3 className='xl:text-4xl text-xl py-2 tracking-widest p-8 '>Software Developer</h3>
+          <p className='xl:text-xl dark:text-gray-100 py-5 leading-8 text-gray-800 font-serif tracking-wide p-2 ' >
             This is me a software developer who is interested in technology and its impacts on business corporates industry and in consumer level.
           </p>
          </div>
         </div>
-         <div className='md:text-5xl text-4xl flex justify-center md:gap-16 gap-10 py-1 text-gray-700 dark:text-white '>
+         <div className='md:text-5xl mt-6 text-4xl flex justify-center md:gap-16 gap-10 py-1 text-gray-700 dark:text-white '>
           <Link className='icons' href='https://twitter.com/wastedman01' target='_blank' ><AiFillTwitterCircle /></Link>
           <Link className='icons' href='https://www.linkedin.com/in/bibek-k-c-b209b01aa/' target='_blank' ><AiFillLinkedin/></Link>
           <Link href={'/'} className=' cursor-pointer icons' onClick={handleClick} ><AiTwotoneMail/></Link>
           <Link className='icons'  href='https://github.com/Wiwek09' target='_blank' ><AiOutlineGithub/></Link>
          </div>
-         <div className=' dark:bg-gray-900 container relative bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-10 mx-auto  overflow-hidden '>
+         <div className=' dark:bg-gray-900 container relative bg-gradient-to-b from-teal-500 rounded-lg md:w-96 md:h-96 w-64 h-64 mt-6 mx-auto  overflow-hidden mb-6 '>
           <Image src='/profile.jpg' layout='fill' objectFit='cover' alt='profile-image'  />
           <div className="overlay dark:bg-gray-900 dark:opacity-95 ">
            <div className="text md:text-3xl text-2xl ">{`<Hello World />`}</div>
@@ -87,7 +87,7 @@ export default function Home() {
       </section>
       <section className='dark:bg-gray-950 dark:bg-opacity-50 md:pl-10 md:pr-10 xl:px-20 p-10 md:px-18 bg-yellow-200 flex flex-col md:flex-row gap-6 min-h-fit rounded-3xl '> {/*Section of about me and skills*/}
         <div className='w-full md:w-[50%] tracking-widest '>
-           <h3 className='text-3xl font-extrabold text-teal-700 uppercase'>About Me</h3>
+           <h3 className='text-3xl text-center md:text-left font-extrabold text-teal-700 uppercase'>About Me</h3>
            <p className='text-md leading-9 xl:text-xl text-gray-800 text-justify mt-2 dark:text-white '>
               I am a <span className='text-teal-500'> full stack web developer </span> who loves to try new tech stack. Getting hands on experience on projects regarding<span className='text-teal-500'> desktop</span> and <span className='text-teal-500'>web application</span>, I have a passion for working in web technology, solving problems and thrive in a team environment.
            </p>
@@ -96,9 +96,9 @@ export default function Home() {
            </p>
         </div>
         <div className='w-full md:ml-12 md:w-[50%] tracking-wide'>
-          <h3 className='md:text-3xl text-2xl font-extrabold text-teal-700 uppercase'>Technology I have worked with</h3>
-          <div className='mt-4'  >
-          <ul className='grid md:grid-cols-2 xl:grid-cols-4 xl:gap-y-4 md:gap-x-12 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal grid-flow-row-dense '>
+          <h3 className='md:text-3xl text-2xl text-center md:text-left font-extrabold text-teal-700 uppercase'>Technology I have worked with</h3>
+          <div className='mt-4 pl-[-2px]'  >
+          <ul className='grid md:grid-cols-3 xl:grid-cols-4 xl:gap-y-4 md:gap-x-12 md:gap-y-2 mt-1 grid-cols-3 gap-4 font-normal grid-flow-row-dense'>
            {skills.map((item) => 
            <li className='list' key={item} >{item}</li>)
            }
@@ -126,8 +126,8 @@ export default function Home() {
              <BiUpArrow className=' transition duration-300 ease-out hover:scale-110 delay-130' />
             </button>
           </div>
-          <div className='p-5 font-serif tracking-widest text-teal-800 font-bold animate-pulse ' >
-            <span>Designed By : Bibek K.C. || Wiwek K.C.</span>
+          <div className='md:p-5 pt-4 pb-4 font-serif tracking-widest text-teal-800 font-extrabold' >
+            <span className='text-xs md:text-base' >Designed By : Bibek K.C. || Wiwek K.C.</span>
           </div>
         </footer>
        </main>
