@@ -60,7 +60,7 @@ export default function Home() {
             {renderThemeChanger()}
             </li>
             <li className='transition ease-in-out  hover:scale-105 duration-700' >
-              <Link className= 'bg-gradient-to-r from-cyan-500 to-teal-500 font-semibold tracking-widest text-black dark:text-white px-4 py-2 rounded-lg ml-8' href='Bibek-kc.pdf' target='_blank' >Resume</Link>
+              <Link className= 'bg-gradient-to-r from-cyan-500 to-teal-500 font-semibold tracking-widest text-black dark:text-white px-4 py-2 rounded-lg ml-8' href='Resume-Bibek-KC.pdf' target='_blank' >Resume</Link>
             </li>
           </ul>
          </nav>
