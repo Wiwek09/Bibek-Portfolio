@@ -86,12 +86,12 @@ export default function Home() {
          </div>
       </section>
       <section className='dark:bg-gray-950 dark:bg-opacity-50 md:pl-10 md:pr-10 xl:px-20 p-10 md:px-18 bg-yellow-200 flex flex-col md:flex-row gap-6 min-h-fit rounded-3xl '> {/*Section of about me and skills*/}
-        <div className='w-full md:w-[50%] tracking-widest '>
-           <h3 className='text-3xl text-center md:text-left font-extrabold text-teal-700 uppercase'>About Me</h3>
-           <p className='text-md leading-9 xl:text-xl text-gray-800 text-justify mt-2 dark:text-white '>
-              I am a <span className='text-teal-500'> full stack web developer </span> who loves to try new tech stack. Getting hands on experience on projects regarding<span className='text-teal-500'> desktop</span> and <span className='text-teal-500'>web application</span>, I have a passion for working in web technology, solving problems and thrive in a team environment.
+        <div className='w-full md:w-[50%] '>
+           <h3 className='text-3xl text-center md:text-left font-extrabold text-teal-700 uppercase tracking-widest'>About Me</h3>
+           <p className='text-md leading-9 xl:text-xl text-gray-800 text-justify mt-2 dark:text-white tracking-wide '>
+              I am a <span className='text-teal-500'>full stack web developer</span> who loves to try new tech stack. Getting hands on experience on projects regarding <span className='text-teal-500'>desktop</span> and <span className='text-teal-500'>web application</span>. I love building projects working in web technology, solving problems and thrive in a team environment.
            </p>
-           <p className='text-md leading-9 xl:text-xl text-gray-800 pt-6 dark:text-white '>
+           <p className='text-md leading-9 xl:text-xl text-gray-800 pt-6 dark:text-white tracking-wide '>
               I&apos;m open to <span className='text-teal-500'> Job</span> opportunities where I can contribute, learn and grow. If you have a good opportunity that matches my skills and experience then don&apos;t hesitate to <span className='text-teal-500'>contact</span> me.
            </p>
         </div>
@@ -120,7 +120,7 @@ export default function Home() {
         </section>
         <footer className='flex flex-col justify-center items-center' >
           <div>
-            <button  className=' text-2xl md:text-3xl cursor-pointer md:mb-3  hover:text-teal-600 border rounded-full p-2 flex items-center justify-center hover:bg-yellow-300 transition duration-300 ease-out delay-150' 
+            <button  className=' text-xl md:text-2xl cursor-pointer md:mb-3  hover:text-teal-600 border rounded-full p-2 flex items-center justify-center hover:bg-yellow-300 transition duration-300 ease-out delay-150' 
             onClick={() => {window.scrollTo({top:0, behavior:"smooth"})
             }} >
              <BiUpArrow className=' transition duration-300 ease-out hover:scale-110 delay-130' />

@@ -58,7 +58,7 @@
         id:6,
         title:'Online Clothing Store',
         image:'/image.png',
-        desc:'Online shopping store where users can watch,search and see details of the products.',
+        desc:'Online shopping store where users can watch, search and see details of the products.',
         tech:['Next','FakestoreApi','TanStack Query'],
         link:'https://online-commerce.vercel.app/',
         github:'https://github.com/Wiwek09/Online-Commerce'

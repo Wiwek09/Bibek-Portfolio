@@ -11,8 +11,8 @@ const project = ({}) => {
         {projects.map((el,index) => {
          return (
           <div key={el.id} className={`flex ${index % 2 ? 'xl:flex-row-reverse' :'xl:flex-row' }  xl:gap-[6rem]  flex-col space-y-8  xl:w-[70%] pb-10 `}   >
-            <div className='md:block shadow-lg shadow-yellow-300  h-fit w-fit rounded-xl' >
-              <div  className='relative overflow-hidden container hover:opacity-[0.8] rounded-xl'  >
+            <div className='md:block shadow-lg shadow-yellow-300  h-fit w-fit rounded-2xl' >
+              <div  className='relative overflow-hidden container hover:opacity-[0.8] rounded-2xl'  >
                 <Image className=' xl:w-auto xl:h-auto h-40 w-10 xl:w-25' loading='lazy' src={el.image} alt='image' height={250} width={500} />
                 <Link href={el.link} target='_blank' >
                  <span className="overlay dark:bg-gray-900 dark:opacity-95 ">
@@ -29,7 +29,7 @@ const project = ({}) => {
                Preview-CodeBase
               </span>
               </Link>
-              <span className='bg-yellow-200 max-w-lg p-3 leading-6 tracking-wide h-fit rounded-lg dark:bg-gray-900 text-justify' >{el.desc}</span>
+              <span className='bg-yellow-200 max-w-lg p-3 leading-6 rounded-lg dark:bg-gray-900 text-justify' >{el.desc}</span>
               <ul className='flex flex-start gap-3 text-xl max-w-lg flex-wrap' >
                 {el.tech.map((number) => {
                   return(<li key={number} className='flex justify-center items-center gap-[4px]' ><HiBadgeCheck/>{number}</li>)
