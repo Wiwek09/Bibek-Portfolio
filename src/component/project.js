@@ -5,14 +5,14 @@ import { HiBadgeCheck } from "react-icons/hi";
 
 const project = () => {
   return (
-    <div className=" p-10 flex flex-col space-y-10 justify-center items-center">
+    <div className=" p-10 flex  flex-col space-y-10 justify-center items-center">
       {projects.map((el, index) => {
         return (
           <div
             key={el.id}
-            className={`flex ${
+            className={`flex flex-wrap ${
               index % 2 ? "xl:flex-row-reverse" : "xl:flex-row"
-            }  xl:gap-[6rem] flex-col gap-8  xl:w-[70%] pb-10 `}
+            }  xl:gap-[6rem] flex-col gap-8 w-[70%] md:w-[50%]  xl:w-[70%] pb-10 `}
           >
             <div className="md:block shadow-lg shadow-yellow-300  h-fit w-fit rounded-2xl">
               <div className="relative overflow-hidden container hover:opacity-[0.8] rounded-2xl">
@@ -44,7 +44,7 @@ const project = () => {
                   Preview-CodeBase
                 </span>
               </Link>
-              <span className="bg-yellow-200 min-w-[4px] p-3 dark:text-[#abbcc4] rounded-lg dark:bg-gray-900 ">
+              <span className="bg-yellow-200 max-w-[30rem] p-3 dark:text-[#abbcc4] rounded-lg dark:bg-gray-900 ">
                 {el.desc}
               </span>
               <ul className="flex flex-start gap-3 text-xl max-w-lg flex-wrap">
